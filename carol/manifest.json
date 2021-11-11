@@ -1,0 +1,38 @@
+{
+  "online": {
+      "processes": [
+          {
+              "algorithmDescription": {
+                  "en-US": "Demo Web App using Dotnet Core.",
+                  "pt-BR": "Demo Web App using Dotnet Core."
+              },
+              "algorithmName": "run_me",
+              "algorithmTitle": {
+                  "en-US": "Hello World",
+                  "pt-BR": "Hello World"
+              },
+              "dataModels": [
+                  "unidademedida-perlini"
+              ],
+              "instanceProperties": {
+                  "properties": {
+                      "preemptible": false,
+                      "dockerName": "totvs-hello-world",
+                      "instanceType": "c1.medium"
+                  }
+              },
+              "name": "totvs_hello_world"
+          }
+      ]
+  },
+  "docker": [{
+          "dockerName": "totvs-hello-world",
+          "dockerTag": "1.0.0.0",
+          "gitBranch": "main",
+          "gitPath": "/",
+          "instanceType": "c1.medium",
+          "gitDockerfileName": "Dockerfile",
+          "gitRepoUrl": "https://github.com/RicardoPerliniTotvs/totvs-hello-world"
+      }
+  ]
+}
